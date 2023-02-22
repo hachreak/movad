@@ -1,0 +1,18 @@
+NF: 3
+VCL: 16
+apply_softmax: true
+batch_size: 8
+class_weights: (0.3, 0.7)
+data_mean: [.5, .5, .5]
+data_path: ./data/dota
+data_std: [.5, .5, .5]
+dataset: Dota
+dropout: 0.3
+image_shape: [720, 1280]
+input_shape: [240, 320]
+lr: 0.0001
+pretrained: 'pretrained/swin_base_patch244_window1677_sthv2.pth'
+rnn_cell_num: 2
+rnn_state_size: 1024
+transformer_type: 'swin_base_patch244_window1677_sthv2'
+vertical_flip_prob: 0.5
