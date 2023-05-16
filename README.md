@@ -79,17 +79,17 @@ data/dota
 
 ### Train
 ```bash
-python main.py --config cfgs/v1_1.yml --output output/v1_1/ --phase train --epochs 100 --epoch -1
+python src/main.py --config cfgs/v1_1.yml --output output/v1_1/ --phase train --epochs 100 --epoch -1
 ```
 
 ### Eval
 ```bash
-python main.py --config cfgs/v1_1.yml --output output/v1_1/ --phase test --epoch 10
+python src/main.py --config cfgs/v1_1.yml --output output/v1_1/ --phase test --epoch 10
 ```
 
 ### Play: generate video
 ```bash
-python main.py --config cfgs/v1_1.yml --output output/v1_1/ --phase play --epoch 100
+python src/main.py --config cfgs/v1_1.yml --output output/v1_1/ --phase play --epoch 100
 ```
 
 ## Results
