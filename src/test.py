@@ -42,7 +42,7 @@ def test(cfg, model, testdata_loader, epoch,
 
         t_shape = (video_data.shape[0], video_data.shape[2] - fb)
         targets = torch.full(t_shape, -100).to(video_data.device)
-        outputs = torch.full(t_shape, -100).to(video_data.device)
+        outputs = torch.full(t_shape, -100, dtype=float).to(video_data.device)
 
         idx_batch = data_info[:, 1]
         toa_batch = data_info[:, 2]

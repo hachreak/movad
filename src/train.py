@@ -49,7 +49,8 @@ def train(cfg, model, traindata_loader, optimizer,
 
             t_shape = (video_data.shape[0], video_data.shape[2] - fb)
             targets = torch.full(t_shape, -100).to(video_data.device)
-            outputs = torch.full(t_shape, -100).to(video_data.device)
+            outputs = torch.full(
+                t_shape, -100, dtype=float).to(video_data.device)
 
             video_len_orig = data_info[:, 0]
             toa_batch = data_info[:, 2]
