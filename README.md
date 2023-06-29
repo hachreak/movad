@@ -146,8 +146,8 @@ Comparison with the state of the art.
 
 | # | Method | Input | AUC | Conf |
 |:---:|:---:|:---:|:---:|:---:|
-| 9  | Our (MOVAD) | RGB (320x240) | 80.11 | [conf](cfgs/v4_1.yml) |
-| 10 | Our (MOVAD) | RGB (640x480) | 82.11 | [conf](cfgs/v4_2.yml) |
+| 9  | Our (MOVAD) | RGB (320x240) | 80.09 | [conf](cfgs/v4_1.yml) |
+| 10 | Our (MOVAD) | RGB (640x480) | 82.17 | [conf](cfgs/v4_2.yml) |
 
 ## License
 
