@@ -77,6 +77,27 @@ data/dota
     └── val_split.txt
 ```
 
+# Download pretrained on DoTA dataset
+
+Open [Release v1.0](https://github.com/IMPLabUniPr/movad/releases/tag/v1.0)
+page and download .pt (pretrained) and .pkl (results) file.
+Unzip them inside the `output` directory, obtaining the following directories
+structure:
+
+```
+output/
+├── v4_1
+│   ├── checkpoints
+│   │   └── model-640.pt
+│   └── eval
+│       └── results-640.pkl
+└── v4_2
+    ├── checkpoints
+    │   └── model-690.pt
+    └── eval
+        └── results-690.pkl
+```
+
 ### Train
 ```bash
 python src/main.py --config cfgs/v4_2.yml --output output/v4_2/ --phase train --epochs 1000 --epoch -1
