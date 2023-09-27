@@ -18,33 +18,38 @@ University of Parma, Italy
 
 ## Abstract
 
-The ability to understand the surrounding scene is of paramount importance
-for Autonomous Vehicles (AVs).
+The ability to understand the surrounding scene is of paramount importance for
+Autonomous Vehicles (AVs).
 
-This paper presents a system capable to work in a real time guaranteed
-response times and online fashion, giving an immediate response to the arise
-of anomalies surrounding the AV, exploiting only the videos captured by a
-dash-mounted camera.
+This paper presents a system capable to work in an online fashion,
+giving an immediate response to the arise of anomalies surrounding the AV,
+exploiting only the videos captured by a dash-mounted camera.
 
 Our architecture, called MOVAD, relies on two main modules:
-a short-term memory to extract information related to the ongoing action,
-implemented by a Video Swin Transformer adapted to work in an online scenario,
-and a long-term memory module that considers also remote past information
-thanks to the use of a Long-Short Term Memory (LSTM) network.
+a Short-Term Memory Module to extract information related to the ongoing
+action, implemented by a Video Swin Transformer (VST), and a Long-Term Memory
+Module injected inside the classifier that considers also remote past
+information and action context thanks to the use of a Long-Short Term
+Memory (LSTM) network.
+
+The strengths of MOVAD are not only linked to its excellent performance, but
+also to its straightforward and modular architecture, trained in a end-to-end
+fashion with only RGB frames with as less assumptions as possible, which
+makes it easy to implement and play with.
 
 We evaluated the performance of our method on Detection of Traffic Anomaly
 (DoTA) dataset, a challenging collection of dash-mounted camera videos of
 accidents.
 
 After an extensive ablation study, MOVAD is able to reach an AUC score of
-82.11%, surpassing the current state-of-the-art by +2.81 AUC.
+82.17\%, surpassing the current state-of-the-art by $+2.87$ AUC.
 
 
 ## Usage
 
 ###  Installation
 ```bash
-$ git clone https://github.com/IMPLabUniPr/movad/tree/icip
+$ git clone https://github.com/IMPLabUniPr/movad/tree/movad_vad
 $ cd movad
 $ wget https://github.com/SwinTransformer/storage/releases/download/v1.0.4/swin_base_patch244_window1677_sthv2.pth -O pretrained/swin_base_patch244_window1677_sthv2.pth
 $ conda env create -n movad_env --file environment.yml
