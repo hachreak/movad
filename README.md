@@ -5,6 +5,8 @@ Official PyTorch implementation of **MOVAD**.
 We propose **MOVAD**, a brand new architecture for online (frame-level) video
 anomaly detection.
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/memory-augmented-online-video-anomaly/online-video-anomaly-detection-on-detection)](https://paperswithcode.com/sota/online-video-anomaly-detection-on-detection?p=memory-augmented-online-video-anomaly)
+
 ![MOVAD Architurecture](images/arch.jpg)
 
 Authors: Leonardo Rossi, Vittorio Bernuzzi, Tomaso Fontanini,
