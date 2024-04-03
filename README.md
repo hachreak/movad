@@ -17,6 +17,7 @@ Dipartimento di Ingegneria e Architettura
 
 University of Parma, Italy
 
+![Video Anomaly Detection with MOVAD](images/video1.gif)
 
 ## Abstract
 
