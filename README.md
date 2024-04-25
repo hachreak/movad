@@ -1,6 +1,6 @@
-## [Memory-augmented Online Video Anomaly Detection (MOVAD)](https://arxiv.org/abs/2302.10719)
+## [Memory-augmented Online Video Anomaly Detection (MOVAD)](https://doi.org/10.1109/ICASSP48485.2024.10447554)
 
-Official PyTorch implementation of **MOVAD**.
+Official PyTorch implementation of **MOVAD**, paper accepted to ICASSP 2024.
 
 We propose **MOVAD**, a brand new architecture for online (frame-level) video
 anomaly detection.
@@ -191,14 +191,12 @@ of the University of Parma, Italy.
 If you find our work useful in your research, please cite:
 
 ```
-@misc{https://doi.org/10.48550/arxiv.2302.10719,
-  doi = {10.48550/ARXIV.2302.10719},
-  url = {https://arxiv.org/abs/2302.10719},
-  author = {Rossi, Leonardo and Bernuzzi, Vittorio and Fontanini, Tomaso and Bertozzi, Massimo and Prati, Andrea},
-  keywords = {Computer Vision and Pattern Recognition (cs.CV), Artificial Intelligence (cs.AI), FOS: Computer and information sciences, FOS: Computer and information sciences, F.1.1, 68-02, 68-04, 68-06, 68T07, 68T10, 68T45},
-  title = {Memory-augmented Online Video Anomaly Detection},
-  publisher = {arXiv},
-  year = {2023},
-  copyright = {Creative Commons Attribution Share Alike 4.0 International}
+@inproceedings{rossi2024memory,
+  title={Memory-augmented Online Video Anomaly Detection},
+  author={Rossi, Leonardo and Bernuzzi, Vittorio and Fontanini, Tomaso and Bertozzi, Massimo and Prati, Andrea},
+  booktitle={ICASSP 2024-2024 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={6590--6594},
+  year={2024},
+  organization={IEEE}
 }
 ```
